@@ -1,0 +1,209 @@
+.menu_principal{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background-size: 700px 500px;
+    padding: .5em;
+}
+
+.menu_principal li {
+    list-style-type: none;
+    text-decoration:none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 1200px;
+    max-height: 500px;
+    size-adjust: auto;
+    align-items: center;
+    border-radius: 10px;
+   }
+
+footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+
+.titulo{
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    color: white; 
+    text-transform: uppercase;
+}
+
+.titulo_black{
+    font-weight: bold;
+    text-align: center;
+    font-size: x-large;
+    color: black;
+    text-transform: uppercase;
+}
+.subtitulo{
+    font-weight: bold;
+    text-align: center;
+    font-size: large;
+    color: white;
+    text-transform: uppercase;
+    background-color: rgb(124,146,179);
+    border-radius: 10px;
+}
+.parrafo{
+    font-weight: normal;
+    text-align:justify;
+    font-size: medium;
+    text-transform:initial;
+}
+
+.servicio{
+    height: 190px;
+    width: 575px;
+    border: 1px black dotted;
+    border-radius: 10px;
+    padding: .5em;
+    color: white;
+    background-color: rgb(115, 169, 212);
+}
+
+.contenedor_servicio div{
+    height: 190px;
+    width: 575px;
+    border: 1px black dotted;
+    border-radius: 10px;
+    padding: .5em;
+    color: white;
+    background-color: rgb(115, 169, 212);
+}
+h3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+iframe{
+    height: 370px;
+    width: 1200px;
+}
+
+.lista_vacunas{
+    column-count:5;
+    column-gap:20px;
+    column-rule:5px double black;
+    list-style: none;
+}
+
+.formulario_contactanos{
+    height: 320px;
+    width: 440px;
+    border: 1px black dotted;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(0, 176, 202);
+}
+
+.titulo_serv{
+    font-weight: bold;
+    text-align: center;
+    font-size:xx-large;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size:large; 
+}
+
+.formulario_contactanos input{
+    height: 18px;
+    width: 390px;
+    align-items:flex-end;
+    align-content:flex-end;
+}
+
+textarea{
+    height: 88px;
+    width: 392px;
+}
+.img_contactanos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+}
+
+.titulo_black:hover {
+    color: darkblue;
+    background-color: antiquewhite;
+    font-size: 35px;
+}
+
+.titulo_serv:hover {
+    color: darkblue;
+    background-color: antiquewhite;
+    font-size: 35px;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-areas:
+    "mision vision"
+    ;
+}
+
+.contenedor_servicio {
+    display: grid;
+    grid-template-areas:
+    "servicio1 servicio2"
+    "servicio3 servicio4"
+    ;
+    
+}
+.servicio1{
+    margin: 4px;
+}
+.servicio2{
+    margin: 4px;
+}
+.servicio3{
+    margin: 4px;
+}
+.servicio4{
+    margin: 4px;
+}
+.servicio{
+    margin: 4px;
+}
+
+.servicio1:hover{
+    margin: 4px;
+    transform: rotate(-10deg);
+}
+.servicio2:hover{
+    margin: 4px;
+    transform: rotate(10deg);
+}
+.servicio3:hover{
+    margin: 4px;
+    transform: rotate(-10deg);
+}
+.servicio4:hover{
+    margin: 4px;
+    transform: rotate(10deg);
+}
+
+h2 div{
+    margin: 5px;
+}
+h3 div{
+    margin: 5px;
+}
