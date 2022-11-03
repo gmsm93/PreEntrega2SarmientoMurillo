@@ -1,24 +1,6 @@
-.menu_principal{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    background-size: 700px 500px;
-    padding: .5em;
-}
-
-.menu_principal li {
-    list-style-type: none;
-    text-decoration:none;
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
-}
-
 img {
-    max-width: 1200px;
-    max-height: 500px;
+    max-width: 100%;
+    max-height: 100%;
     size-adjust: auto;
     align-items: center;
     border-radius: 10px;
@@ -63,8 +45,8 @@ footer{
 }
 
 .servicio{
-    height: 190px;
-    width: 575px;
+    height: 11.8rem;
+    width: 35.9rem;
     border: 1px black dotted;
     border-radius: 10px;
     padding: .5em;
@@ -73,8 +55,8 @@ footer{
 }
 
 .contenedor_servicio div{
-    height: 190px;
-    width: 575px;
+    height: 11.8rem;
+    width: 35.9rem;
     border: 1px black dotted;
     border-radius: 10px;
     padding: .5em;
@@ -90,24 +72,15 @@ h3 {
 }
 
 iframe{
-    height: 370px;
-    width: 1200px;
+    height: 23.12rem;
+    width: 100%;
 }
 
 .lista_vacunas{
     column-count:5;
-    column-gap:20px;
-    column-rule:5px double black;
+    column-gap:1.25rem;
+    column-rule:0.3rem double black;
     list-style: none;
-}
-
-.formulario_contactanos{
-    height: 320px;
-    width: 440px;
-    border: 1px black dotted;
-    border-radius: 10px;
-    color: white;
-    background-color: rgb(0, 176, 202);
 }
 
 .titulo_serv{
@@ -121,17 +94,6 @@ h2{
     font-size:large; 
 }
 
-.formulario_contactanos input{
-    height: 18px;
-    width: 390px;
-    align-items:flex-end;
-    align-content:flex-end;
-}
-
-textarea{
-    height: 88px;
-    width: 392px;
-}
 .img_contactanos {
     display: flex;
     flex-direction: row;
@@ -144,13 +106,13 @@ textarea{
 .titulo_black:hover {
     color: darkblue;
     background-color: antiquewhite;
-    font-size: 35px;
+    font-size: 2.18rem;
 }
 
 .titulo_serv:hover {
     color: darkblue;
     background-color: antiquewhite;
-    font-size: 35px;
+    font-size: 2.18rem;
 }
 
 .contenedor {
@@ -168,42 +130,51 @@ textarea{
     ;
     
 }
-.servicio1{
-    margin: 4px;
-}
-.servicio2{
-    margin: 4px;
-}
-.servicio3{
-    margin: 4px;
-}
-.servicio4{
-    margin: 4px;
-}
-.servicio{
-    margin: 4px;
+
+@media (max-width:600px) {
+    .contenedor_servicio {
+        display: grid;
+        grid-template-areas:
+        "servicio1"
+        "servicio2"
+        "servicio3"
+        "servicio4" ;
+    } 
+
+    .contenedor {
+        display: grid;
+        grid-template-areas:
+        "mision"
+        "vision"
+        ;
+    }
+
+    .lista_vacunas{
+        column-count:3;
+        column-gap:1.25rem;
+        column-rule:0.3rem double black;
+        list-style: none;
+    }
 }
 
-.servicio1:hover{
-    margin: 4px;
+.servicio1, .servicio2, .servicio3, .servicio4{
+    margin: 0.25rem;
+    max-width: 100%;
+}
+
+.servicio1:hover , .servicio3:hover{
+    margin: 0.25rem;
     transform: rotate(-10deg);
 }
-.servicio2:hover{
-    margin: 4px;
-    transform: rotate(10deg);
-}
-.servicio3:hover{
-    margin: 4px;
-    transform: rotate(-10deg);
-}
-.servicio4:hover{
-    margin: 4px;
+.servicio2:hover , .servicio4:hover{
+    margin: 0.25rem;
     transform: rotate(10deg);
 }
 
-h2 div{
-    margin: 5px;
+h2 div, h3 div{
+    margin: 0.25rem;
 }
-h3 div{
-    margin: 5px;
+
+img, picture, video {
+    width: 100%;
 }
